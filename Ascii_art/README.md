@@ -11,7 +11,7 @@ In the command line, Enter
 
 `python3 make_art.py [image_path]`
 
-Replace the `[image_path]` with the image you want to do ascii-art. By default it takes [sample_image.jpg]
+Replace the `[image_path]` with the image you want to do ascii-art. By default it takes [sample_image.png]
 
 ## Customization
 There are two things you can customize in [make_art.py]
