@@ -14,3 +14,5 @@
 ![License](https://img.shields.io/github/license/Python-World/python-mini-projects) -->
 
 A collection of simple python mini projects to enhance my Python skills.
+
+If you want to learn about python, visit [here.](https://github.com/Python-World/Py-Resources)

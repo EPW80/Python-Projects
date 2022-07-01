@@ -1,5 +1,5 @@
 # This program shows the simulation of 5 balls bouncing under gravitational acceleration.
-# It is also accompanied by eleastic collission with walls of the container.
+# It is also accompanied by elastic collision with walls of the container.
 # It is fun to watch.
 import pygame
 import time
