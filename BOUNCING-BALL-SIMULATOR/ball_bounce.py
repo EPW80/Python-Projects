@@ -1,18 +1,18 @@
-# This program shows the simulation of 5 balls  bouncing under gravitational acceleration.
-# It is also accompanied by elastic collission with walls of the container.
-# It is fun to watch the simulation.
-
+# This program shows the simulation of 5 balls bouncing under gravitational acceleration.
+# It is also accompanied by eleastic collission with walls of the container.
+# It is fun to watch.
 import pygame
 import time
 import random
 
 pygame.init()
 
+# setting screen size of pygame window to 800 by 600 pixels
 screen = pygame.display.set_mode((800, 600))
 background = pygame.image.load('background-img.jpg')
 
-# Adding title to the simulation
-pygame.displauy.set_caption('Ball Bounce Simulation')
+# Adding title
+pygame.display.set_caption('Ball Bounce Simulation')
 
 
 class ball:
@@ -23,7 +23,7 @@ class ball:
         self.velocityX = 4
         self.velocityY = 4
         self.X = random.randint(0, 768)
-        self.X = random.randint(0, 350)
+        self.Y = random.randint(0, 350)
 
     def render_ball(self):
         screen.blit(ball.ball_image, (self.X, self.Y))
@@ -45,7 +45,7 @@ class ball:
             self.Y = 568
 
 
-# list of balls created as objects in the simulation
+# list of balls created as objects
 Ball_List = [ball(), ball(), ball(), ball(), ball()]
 
 # The main program loop
