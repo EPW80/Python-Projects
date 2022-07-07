@@ -12,7 +12,7 @@ from tkinter import messagebox
 import string
 from captcha.image import ImageCaptcha
 
-image = ImageCaptcha(fonts=['C:/Users/Administrator/Downloads/ChelseaMarketsr.ttf', 'C:/Users/Administrator/Downloads/DejaVuSanssr.ttf'])
+image = ImageCaptcha(fonts=[r'C:\Users\erikm\OneDrive\Desktop\Python-Projects\CAPTCHA_GENERATOR\fonts\ChelseaMarketsr.ttf', r'C:\Users\erikm\OneDrive\Desktop\Python-Projects\CAPTCHA_GENERATOR\fonts\DejaVuSanssr.ttf'])
 
 random=str(randint(100000,999999))
 data = image.generate(random)
@@ -23,7 +23,7 @@ def verify():
     global random
     x=t1.get("0.0",END)
     if (int(x)==int(random)):
-        messagebox.showinfo("sucsess", "verified")
+        messagebox.showinfo("success", "verified")
     else:
         messagebox.showinfo("Alert", "Not verified")
         refresh()
